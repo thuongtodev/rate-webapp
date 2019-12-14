@@ -1,0 +1,62 @@
+.content {
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  background-color: #0a569c;
+
+  > .content {
+    margin: auto;
+    padding: 0 20px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    > .backButton {
+      display: flex;
+      align-items: center;
+      height: 32px;
+      width: 32px;
+      margin-right: 15px;
+
+      > a {
+        display: flex;
+        color: inherit;
+        background-color: rgba(0, 0, 0, 0.09);
+        padding: 8px;
+        border-radius: 5px;
+        height: 100%;
+        opacity: 0.7;
+        color: white;
+      }
+    }
+
+    > .title {
+      color: white;
+      position: relative;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    > .earning {
+      color: #ffffff;
+    }
+  }
+}
+
+.badge {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+
+  > span {
+    width: 10px;
+    height: 10px;
+  }
+}

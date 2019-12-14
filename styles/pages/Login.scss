@@ -1,0 +1,12 @@
+@import '../mixins.scss';
+
+.layout {
+  margin: auto;
+  width: 100%;
+  max-width: 960px;
+  overflow: hidden;
+  @include media-breakpoint-down(md) {
+    margin: 0;
+    padding: 20px;
+  }
+}

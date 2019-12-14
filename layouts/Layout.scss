@@ -1,0 +1,21 @@
+@import '../styles/themes.scss';
+
+.adminLayout {
+  height: 100vh;
+  min-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+  > .content {
+    flex: auto;
+    background: #eaf0f6;
+  }
+}
+
+.clientLayout {
+  background-color: $backgroundColor;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}

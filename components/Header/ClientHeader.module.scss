@@ -1,0 +1,81 @@
+@import '../../styles/themes.scss';
+
+.header {
+  background-color: $backgroundColor;
+  border-bottom: 1px $secondaryBackground solid;
+  padding: 0 15px;
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex: 1;
+
+    .left {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      .logo {
+        height: 30px;
+      }
+      .menu {
+        font-size: 20px;
+        cursor: pointer;
+        margin-right: 15px;
+        color: $textColor;
+      }
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      justify-content: flex-end;
+      .question {
+        font-size: 20px;
+        cursor: pointer;
+        color: $textColor;
+      }
+    }
+  }
+}
+
+.drawer {
+  padding: 30px;
+  background-color: rgb(42, 47, 69);
+  height: 100%;
+
+  > .drawerClose {
+    display: flex;
+    justify-content: flex-end;
+    color: $textColor;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  > .list {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+
+    > li {
+      margin-bottom: 20px;
+      height: 24px;
+
+      > a {
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        color: #b7b7b7;
+
+        &:hover {
+          color: $textColor;
+        }
+      }
+    }
+  }
+}

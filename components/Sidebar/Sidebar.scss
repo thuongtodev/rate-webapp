@@ -1,0 +1,140 @@
+.adminSidebar {
+  background-color: #272f41;
+  width: 175px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+  transition: background-color 0.1s linear;
+
+  .container {
+    color: #a9b1c4;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    > .account {
+      z-index: 102;
+      width: 145px;
+      height: 45px;
+      margin: 15px;
+      transition: all 0.15s ease;
+
+      > .badge {
+        position: relative;
+        margin: 0 auto;
+        z-index: 102;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+
+        > .profile {
+          background-color: #272f41;
+          border-radius: 6px;
+          text-align: center;
+          position: relative;
+          overflow: hidden;
+          width: 48px;
+          min-width: 48px;
+          height: 46px;
+
+          > .initials {
+            color: #fff;
+            background-color: #404d6b;
+            line-height: 2.9;
+            font-weight: 700;
+            width: 100%;
+            height: 100%;
+          }
+        }
+        > .greet {
+          color: #a9b1c4;
+          text-align: left;
+          position: relative;
+          top: 0;
+          left: 0;
+          max-width: 100px;
+          pointer-events: none;
+          transition: all 0.15s ease;
+          padding-left: 7px;
+
+          p:first-of-type {
+            font-size: 0.8em;
+          }
+
+          p {
+            pointer-events: none;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    > .menu {
+      height: calc(100% - 65px);
+      margin-right: 6px;
+      -webkit-overflow-scrolling: touch;
+      -ms-touch-action: pan-y;
+      touch-action: pan-y;
+      overflow: hidden;
+      overflow-y: auto;
+
+      > hr {
+        height: 1px;
+        width: 75%;
+        margin: 10px auto;
+        border-top: 0px solid #a9b1c4;
+        opacity: 0.1;
+      }
+
+      > .item {
+        padding: 15px 20px;
+        border-radius: 5px;
+        width: 100%;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        color: #a9b1c4;
+
+        > i {
+          font-size: 1.4em;
+          margin-right: 15px;
+          line-height: 0;
+          top: 0;
+          color: inherit;
+          font-weight: 700;
+        }
+
+        > p {
+          color: inherit;
+          text-align: left;
+          font-size: 14.4px;
+          font-weight: 400;
+          margin-bottom: 0;
+        }
+
+        &.active {
+          color: white;
+        }
+
+        &:hover {
+          p {
+            color: white;
+          }
+          i {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.test {
+  background: black;
+}
